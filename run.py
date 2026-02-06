@@ -105,7 +105,7 @@ with st.sidebar:
     
     selected_project = st.radio(
         "",
-        ["00. Impact Summary", 
+        ["00. Summary", 
          "01. Revenue Analysis", 
          "02. Churn Prediction", 
          "03. AI Triage System"],
@@ -130,10 +130,10 @@ with st.sidebar:
 # -----------------------------------------------------------------------------
 # PAGE 0: HOME / IMPACT SUMMARY
 # -----------------------------------------------------------------------------
-if selected_project == "00. Impact Summary":
+if selected_project == "00. Summary":
     # FADE IN ANIMATION
     st.markdown('<div class="hero-text">Translating data into<br>strategic clarity.</div>', unsafe_allow_html=True)
-    st.markdown("<p style='font-size: 20px; color: #8899AC; margin-bottom: 40px;'>Sejal Parihar • Data Analyst</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 20px; color: #8899AC; margin-bottom: 40px;'>Sejal Parihar • Data Analysis and Visulization</p>", unsafe_allow_html=True)
     
     # METRICS ROW
     col1, col2, col3 = st.columns(3)
