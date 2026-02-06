@@ -129,7 +129,7 @@ with st.sidebar:
 if selected_project == "Impact Summary":
     # FADE IN ANIMATION
     st.markdown('<div class="hero-text">Translating data into<br>strategic clarity.</div>', unsafe_allow_html=True)
-    st.markdown("<p style='font-size: 20px; color: #8899AC; margin-bottom: 40px;'>Sejal Parihar • Data Analyst & Engineer</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 20px; color: #8899AC; margin-bottom: 40px;'>Sejal Parihar • Data Analyst</p>", unsafe_allow_html=True)
     
     # METRICS ROW
     col1, col2, col3 = st.columns(3)
