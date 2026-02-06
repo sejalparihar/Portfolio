@@ -19,7 +19,7 @@ st.set_page_config(
 st.markdown("""
     <style>
     /* 1. GOOGLE FONTS */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Outfit:wght@300;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Times New Roman:wght@300;600&display=swap');
 
     /* 2. GLOBAL THEME RESET */
     .stApp {
@@ -27,14 +27,14 @@ st.markdown("""
     }
     
     h1, h2, h3, h4, p, span, div {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Arial', sans-serif;
         color: #F0F2F6;
-        font-weight: 300;
+        font-weight: 350;
     }
     
     /* 3. HERO TYPOGRAPHY (Gradient Text) */
     .hero-text {
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Times New Roman', sans-serif;
         font-size: 60px;
         font-weight: 600;
         letter-spacing: -1px;
@@ -45,7 +45,7 @@ st.markdown("""
     }
     
     .project-header {
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Times New Roman', sans-serif;
         font-size: 38px;
         font-weight: 300;
         color: white;
@@ -100,12 +100,12 @@ st.markdown("""
 # 3. NAVIGATION
 # -----------------------------------------------------------------------------
 with st.sidebar:
-    st.markdown("<h3 style='font-family: Outfit; letter-spacing: 2px; color: #8899AC;'>PORTFOLIO</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='font-family: Times New Roman; letter-spacing: 2px; color: #8899AC;'>PORTFOLIO</h3>", unsafe_allow_html=True)
     st.write("")
     
     selected_project = st.radio(
         "",
-        ["Impact Summary", 
+        ["00. Impact Summary", 
          "01. Revenue Analysis", 
          "02. Churn Prediction", 
          "03. AI Triage System"],
@@ -115,10 +115,14 @@ with st.sidebar:
     st.write("---")
     st.markdown("""
     <div style="padding: 10px; background: rgba(255,255,255,0.03); border-radius: 10px;">
-        <small style="color: #8899AC; font-weight: 600;">TECH STACK</small><br>
-        <span style="color: #00ADB5;">Python</span> &nbsp; 
-        <span style="color: #00ADB5;">SQL</span> &nbsp; 
-        <span style="color: #00ADB5;">LLMs</span>
+        \n<small style="color: #8899AC; font-weight: 500;">TECH STACK</small><br>
+        \n<span style="color: #00ADB5;">Python</span> &nbsp;
+        \n<span style="color: #00ADB5;">SQL</span> &nbsp; 
+        \n<span style="color: #00ADB5;">Data Visualization</span> &nbsp;
+        \n<span style="color: #00ADB5;">DAX</span> &nbsp;
+        \n<span style="color: #00ADB5;">Excel</span> &nbsp;
+        \n<span style="color: #00ADB5;">Workflow Design</span> &nbsp;
+        \n<span style="color: #00ADB5;">Wireframe</span> &nbsp;
     </div>
     """, unsafe_allow_html=True)
 
@@ -126,21 +130,21 @@ with st.sidebar:
 # -----------------------------------------------------------------------------
 # PAGE 0: HOME / IMPACT SUMMARY
 # -----------------------------------------------------------------------------
-if selected_project == "Impact Summary":
+if selected_project == "00. Impact Summary":
     # FADE IN ANIMATION
     st.markdown('<div class="hero-text">Translating data into<br>strategic clarity.</div>', unsafe_allow_html=True)
     st.markdown("<p style='font-size: 20px; color: #8899AC; margin-bottom: 40px;'>Sejal Parihar • Data Analyst</p>", unsafe_allow_html=True)
     
     # METRICS ROW
     col1, col2, col3 = st.columns(3)
-    col1.metric("Clients Served", "3", "Retail, SaaS, Fintech")
+    col1.metric("Clients Benefitted", "3", "Retail, Fintech, SaaS")
     col2.metric("Revenue Impact", "$420k+", "Optimized Spend")
     col3.metric("Data Processed", "1.5TB", "ETL Pipelines")
     
     st.write("##")
     
     # ELEGANT PROJECT GRID
-    st.markdown("<h4 style='font-family: Outfit; letter-spacing: 1px; color: #FFFFFF; margin-top: 20px;'>SELECTED WORKS</h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='font-family: Times New Roman; letter-spacing: 1px; color: #FFFFFF; margin-top: 20px;'>DIVERSIFIED WORKS</h4>", unsafe_allow_html=True)
     
     # Using 'info' boxes as clean summary cards
     c1, c2, c3 = st.columns(3)
