@@ -1,0 +1,16 @@
+name: Keep Streamlit Awake
+
+on:
+  schedule:
+    # This specific cron string tells it to run at midnight every 5 days.
+    - cron: '0 0 */5 * *'
+  # This line adds a manual button so we can test it immediately.
+  workflow_dispatch: 
+
+jobs:
+  ping-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit URL
+        # Replace the URL below with your actual portfolio URL
+        run: curl -s -o /dev/null -w "%{http_code}" https://portfolio-sp.streamlit.app
