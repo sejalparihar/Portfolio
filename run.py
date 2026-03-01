@@ -111,21 +111,6 @@ with st.sidebar:
          "03. AI Triage System"],
         index=0
     )
-    
-    st.write("---")
-    st.markdown("""
-    <div style="padding: 10px; background: rgba(255,255,255,0.03); border-radius: 10px;">
-        \n<small style="color: #8899AC; font-weight: 500;">TECH STACK</small><br>
-        \n<span style="color: #00ADB5;">Python</span> &nbsp;
-        \n<span style="color: #00ADB5;">SQL</span> &nbsp; 
-        \n<span style="color: #00ADB5;">Data Visualization</span> &nbsp;
-        \n<span style="color: #00ADB5;">DAX</span> &nbsp;
-        \n<span style="color: #00ADB5;">Excel</span> &nbsp;
-        \n<span style="color: #00ADB5;">Workflow Design</span> &nbsp;
-        \n<span style="color: #00ADB5;">Wireframe</span> &nbsp;
-    </div>
-    """, unsafe_allow_html=True)
-
 
 # -----------------------------------------------------------------------------
 # PAGE 0: HOME / IMPACT SUMMARY
